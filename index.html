@@ -14,6 +14,7 @@
 
     <form action="index.html" method="post">
         <h1>Sign Up</h1>
+
         <fieldset>
             <legend><span class="number">1</span>Your Basic Info</legend>
             <label for="name">Name</label>
@@ -21,23 +22,21 @@
             <label for="email">Email</label>
             <input type="email" id="email" name="user_email">
             <label for="password">Password</label>
-            <input type="text" id="password" name="user_password">
+            <input type="password" id="password" name="user_password">
 
             <label>Age</label>
-            <input type="radio" id='under_13' name="user_age" value="under_13"><label for="under_13" class="light">Under 13</label>
-            <br>
-            <input type="radio" id='over_13' name="user_age" value="over_13"><label for="over_13" class="light">Over 13</label>
-
+            <input type="radio" id="under_13" name="age" value="under_13"><label for="under_13" class="light">Under
+                13</label><br>
+            <input type="radio" id="over_13" name="age" value="over_13"><label for="over_13" class="light">Over
+                13</label>
         </fieldset>
 
         <fieldset>
             <legend><span class="number">2</span>Your Bio</legend>
-            <label for="bio">Bio</label>
             <textarea name="user_bio" id="bio" cols="30" rows="10"></textarea>
 
-            <label for="jobs">Roles</label>
-            <select name="roles" id="jobs">
-                <optgroup label="Web">
+            <select name="user_roles" id="roles">
+                <optgroup>
                     <option value="js_developer">JS Developer</option>
                     <option value="python_developer">Python Developer</option>
                     <option value="rails_developer">Rails Developer</option>
@@ -58,16 +57,16 @@
             </select>
 
             <label>Interests</label>
-            <input type="checkbox" id=development value="interests_development" name="user_interests"><label for="development" class="light">Development</label><br>
-            <input type="checkbox" id=design value="interests_design" name="user_interests"><label for="design" class="light">Design</label><br>
-            <input type="checkbox" id=business value="interests_business" name="user_interests"><label for="business" class="light">Business</label>
+            <input type="checkbox" id="development" name="interests"><label for="development" class="light">Development</label><br>
+            <input type="checkbox" id="design" name="interests"><label for="design" class="light">Design</label><br>
+            <input type="checkbox" id="product" name="interests"><label for="product" class="light">Product</label><br>
+            
         </fieldset>
 
-        <button type='submit'>Submit</button>
+        <button type="submit">Submit</button>
+
 
     </form>
-
-
 
 </body>
 
